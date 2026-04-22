@@ -88,5 +88,8 @@
     flex-direction: column;
   }
 
+  #experience .stacks-cont {
+    flex-direction: column;
+  }
 
 }
