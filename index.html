@@ -15,12 +15,21 @@
         <ul>
           <li><a href="#about-me">About</a></li>
           <li><a href="#experience">Experience</a></li>
-          <li><a href="#">Projects</a></li>
-          <li><a href="./contact.html">Contact</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact-me">Contact</a></li>
         </ul>
       </nav>
       <nav id="nav-bar-mobile">
-        <i class="fa-solid fa-bars"></i>
+        <div id="hamburger-icon">
+          <i id="open-icon" class="fa-solid fa-bars"></i>
+          <i id="close-icon" class="fa-solid fa-x"></i>
+        </div>
+        <ul id="nav-list-mobile">
+          <li><a href="#about-me">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact-me">Contact</a></li>
+        </ul>
       </nav>
     </header>
 
@@ -35,13 +44,19 @@
           <h3>Frontend Developer</h3>
           <div class="btns-cont">
             <a id="cv-btn" href="#">Download CV</a>
-            <a id="contact-btn" href="#contact-us">contact Info</a>
+            <a id="contact-btn" href="#contact-me">contact Info</a>
           </div>
           <div class="social-cont">
-            <a href="https://www.linkedin.com/in/abdul-rahmanadel/">
+            <a
+              href="https://www.linkedin.com/in/abdul-rahmanadel/"
+              target="_blank"
+            >
               <i class="fa-brands fa-linkedin-in"></i>
             </a>
-            <a href="https://github.com/mrK-infosec/mrK-infosec/">
+            <a
+              href="https://github.com/mrK-infosec/mrK-infosec/"
+              target="_blank"
+            >
               <i class="fa-brands fa-github"></i>
             </a>
           </div>
@@ -91,7 +106,7 @@
           <h2>Experience</h2>
         </div>
 
-        <div class="stacks-cont">
+        <div id="stacks-cont">
           <div class="stack-card">
             <h3 class="stack-title">Frontend Development</h3>
             <div class="tools-cont">
@@ -183,8 +198,94 @@
           </div>
         </div>
       </section>
+
+      <section id="projects">
+        <div class="section-head">
+          <p>Browse My Recent</p>
+          <h2>Projects</h2>
+        </div>
+
+        <div class="cards">
+          <div class="card">
+            <img src="./img_avatar.png" alt="project image" />
+            <h3>Appie App</h3>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum at
+              suscipit culpa, nulla vitae ut expedita repellat laudantium fugiat
+              iusto atque reiciendis impedit tempora ipsa dignissimos aut enim
+              nam corporis!
+            </p>
+            <div class="btns-cont">
+              <a id="cv-btn" href="#">Github</a>
+              <a id="cv-btn" href="#">Live demo</a>
+            </div>
+          </div>
+
+          <div class="card">
+            <img src="./img_avatar.png" alt="project image" />
+            <h3>Omnifood</h3>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum at
+              suscipit culpa, nulla vitae ut expedita repellat laudantium fugiat
+              iusto atque reiciendis impedit tempora ipsa dignissimos aut enim
+              nam corporis!
+            </p>
+            <div class="btns-cont">
+              <a id="cv-btn" href="#">Github</a>
+              <a id="cv-btn" href="#">Live demo</a>
+            </div>
+          </div>
+          <div class="card">
+            <img src="./img_avatar.png" alt="project image" />
+            <h3>Omnifood</h3>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum at
+              suscipit culpa, nulla vitae ut expedita repellat laudantium fugiat
+              iusto atque reiciendis impedit tempora ipsa dignissimos aut enim
+              nam corporis!
+            </p>
+            <div class="btns-cont">
+              <a id="cv-btn" href="#">Github</a>
+              <a id="cv-btn" href="#">Live demo</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact-me">
+        <div class="section-head">
+          <p>Get in Touch</p>
+          <h2>Contact Me</h2>
+        </div>
+
+        <div class="contact-cont">
+          <div class="contact-item">
+            <i class="fa-solid fa-envelope"></i>
+            <a href="email:abdoadel3337@hotmail.com"
+              >abdoadel3337@hotmail.com</a
+            >
+          </div>
+          <div class="contact-item">
+            <i class="fa-brands fa-linkedin"></i>
+            <a href="https://www.linkedin.com/in/abdul-rahmanadel/">Linkedin</a>
+          </div>
+        </div>
+      </section>
     </main>
 
+    <footer>
+      <nav id="nav-bar">
+        <ul>
+          <li><a href="#about-me">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact-me">Contact</a></li>
+        </ul>
+      </nav>
+      <p>Copyright ©2026 AbdulRahman Adel. All Rights Reserved.</p>
+    </footer>
+
     <script src="./js/all.min.js"></script>
+    <script src="./main.js"></script>
   </body>
 </html>

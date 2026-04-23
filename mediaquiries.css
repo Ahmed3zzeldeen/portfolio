@@ -1,27 +1,25 @@
-/* Small Desktop */
 @media (max-width: 1180px) {
 
-  #hero-sec {
+  #experience #stacks-cont {
     flex-direction: column;
   }
 
-  #about-me .about-body {
-    flex-direction: column;
-    align-items: center;
+  #experience #stacks-cont .stack-card .tools-cont {
+    justify-content: center;
   }
 
 }
 
 
-
 /* Tablet */
-
-@media (max-width: 768px) {
-
+@media (max-width: 778px) {
   html {
     font-size: 10px;
   }
 
+  .section-head h2 {
+    font-size: 2rem;
+  }
 
   #nav-bar {
     display: none;
@@ -31,65 +29,90 @@
     display: flex;
   }
 
-  #nav-bar-mobile svg {
-    font-size: 32px;
+  #nav-list-mobile {
+    display: none;
+    flex-direction: column;
+    background: #e7e7e7;
+    justify-content: space-around;
+    align-items: center;
+    border: 2px solid red;
+    position: fixed;
+    width: 100vw;
+    height: calc(100vh - 80px);
+    top: 80px;
+    left: 0;
   }
 
+  #hamburger-icon #close-icon {
+    display: none;
+  }
+
+  #hamburger-icon.open #open-icon {
+    display: none;
+  }
+
+  #hamburger-icon.open #close-icon {
+    display: flex;
+  }
+
+
+  #nav-list-mobile.open {
+    display: flex;
+  }
+
+
+
+  #hero-sec {
+    flex-direction: column;
+    gap: 3rem;
+  }
 
   .image-cont {
-    width: 270px;
-    height: 270px;
+    width: 200px;
+    height: 200px;
   }
 
-  /* start about section */
+  .info-cont {
+    gap: 1.5rem;
+  }
+
+
+
+  /* Start About me section */
+
   #about-me {
-    padding: 0 3rem;
+    margin: 2rem 3rem;
   }
 
-
+  #about-me .about-body {
+    flex-direction: column;
+    align-items: center;
+  }
 
   #about-me .about-img-cont {
     width: 270px;
     height: 270px;
   }
 
-  #about-me .card-container {
-    flex-direction: column;
-  }
-
-
   #experience {
-    padding: 5rem;
+    padding: 0 3rem;
+    padding-top: 25px;
   }
 
 }
 
 
-/* Mobile */
 
+/* mobile */
 @media (max-width: 320px) {
-
   .image-cont {
     width: 150px;
     height: 150px;
   }
 
+  #contact-me {
+    padding: 2rem;
 
-  #about-me .about-img-cont {
-    width: 150px;
-    height: 150px;
-  }
-
-  #experience {
-    padding: 3rem;
-  }
-
-  #experience .stacks-cont {
-    flex-direction: column;
-  }
-
-  #experience .stacks-cont {
-    flex-direction: column;
   }
 
 }
